@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		961D0CD61CC7033700C9E97F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961D0CD51CC7033700C9E97F /* AppDelegate.swift */; };
-		961D0CD81CC7033700C9E97F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961D0CD71CC7033700C9E97F /* ViewController.swift */; };
 		961D0CDB1CC7033700C9E97F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961D0CD91CC7033700C9E97F /* Main.storyboard */; };
 		961D0CDD1CC7033700C9E97F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961D0CDC1CC7033700C9E97F /* Assets.xcassets */; };
 		961D0CE01CC7033700C9E97F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961D0CDE1CC7033700C9E97F /* LaunchScreen.storyboard */; };
 		961D0CEB1CC7033700C9E97F /* newsreaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961D0CEA1CC7033700C9E97F /* newsreaderTests.swift */; };
 		961D0CF61CC7033700C9E97F /* newsreaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961D0CF51CC7033700C9E97F /* newsreaderUITests.swift */; };
+		961D0D0A1CC838BA00C9E97F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961D0D091CC838BA00C9E97F /* Article.swift */; };
+		96C8F4301CC8BCE7000C94C8 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96C8F42F1CC8BCE7000C94C8 /* default.jpg */; };
+		96C8F4361CC8C273000C94C8 /* ArticleTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C8F4351CC8C273000C94C8 /* ArticleTableController.swift */; };
+		96C8F4381CC8C2B6000C94C8 /* ArticleCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C8F4371CC8C2B6000C94C8 /* ArticleCellController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		961D0CD21CC7033700C9E97F /* newsreader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsreader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		961D0CD51CC7033700C9E97F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		961D0CD71CC7033700C9E97F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		961D0CDA1CC7033700C9E97F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		961D0CDC1CC7033700C9E97F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		961D0CDF1CC7033700C9E97F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		961D0CF11CC7033700C9E97F /* newsreaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newsreaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		961D0CF51CC7033700C9E97F /* newsreaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsreaderUITests.swift; sourceTree = "<group>"; };
 		961D0CF71CC7033700C9E97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		961D0D091CC838BA00C9E97F /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		96C8F42F1CC8BCE7000C94C8 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
+		96C8F4351CC8C273000C94C8 /* ArticleTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleTableController.swift; path = ../ArticleTableController.swift; sourceTree = "<group>"; };
+		96C8F4371CC8C2B6000C94C8 /* ArticleCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleCellController.swift; path = ../ArticleCellController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		961D0CD41CC7033700C9E97F /* newsreader */ = {
 			isa = PBXGroup;
 			children = (
+				96C8F4371CC8C2B6000C94C8 /* ArticleCellController.swift */,
+				96C8F4351CC8C273000C94C8 /* ArticleTableController.swift */,
 				961D0CD51CC7033700C9E97F /* AppDelegate.swift */,
-				961D0CD71CC7033700C9E97F /* ViewController.swift */,
 				961D0CD91CC7033700C9E97F /* Main.storyboard */,
 				961D0CDC1CC7033700C9E97F /* Assets.xcassets */,
 				961D0CDE1CC7033700C9E97F /* LaunchScreen.storyboard */,
 				961D0CE11CC7033700C9E97F /* Info.plist */,
+				961D0D091CC838BA00C9E97F /* Article.swift */,
+				96C8F42F1CC8BCE7000C94C8 /* default.jpg */,
 			);
 			path = newsreader;
 			sourceTree = "<group>";
@@ -232,6 +241,7 @@
 				961D0CE01CC7033700C9E97F /* LaunchScreen.storyboard in Resources */,
 				961D0CDD1CC7033700C9E97F /* Assets.xcassets in Resources */,
 				961D0CDB1CC7033700C9E97F /* Main.storyboard in Resources */,
+				96C8F4301CC8BCE7000C94C8 /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				961D0CD81CC7033700C9E97F /* ViewController.swift in Sources */,
+				96C8F4361CC8C273000C94C8 /* ArticleTableController.swift in Sources */,
 				961D0CD61CC7033700C9E97F /* AppDelegate.swift in Sources */,
+				96C8F4381CC8C2B6000C94C8 /* ArticleCellController.swift in Sources */,
+				961D0D0A1CC838BA00C9E97F /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +494,7 @@
 				961D0CFC1CC7033700C9E97F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		961D0CFD1CC7033700C9E97F /* Build configuration list for PBXNativeTarget "newsreaderTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +503,7 @@
 				961D0CFF1CC7033700C9E97F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		961D0D001CC7033700C9E97F /* Build configuration list for PBXNativeTarget "newsreaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +512,7 @@
 				961D0D021CC7033700C9E97F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

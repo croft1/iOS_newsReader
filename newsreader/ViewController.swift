@@ -8,8 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
+    
+    
+    //var delegate:
+    
+    required init?(coder aDecoder: NSCoder) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +29,7 @@ class ViewController: UIViewController {
     }
 
 
+    
+    
 }
 
