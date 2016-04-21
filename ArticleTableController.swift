@@ -12,7 +12,7 @@ class ArticleTableController: UITableViewController {
     
     @IBOutlet var articleListView: UITableView!
     
-    var articleArrayList: NSMutableArray
+    public var articleArrayList: NSMutableArray
     
     let JSON_LINK: String = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20feed%20where%20url=%27www.abc.net.au%2Fnews%2Ffeed%2F51120%2Frss.xml%27&format=json"
 
@@ -80,9 +80,33 @@ class ArticleTableController: UITableViewController {
             print(jsonResult["query"]!["results"]!!["item"]!![0]["title"])
             
             for index in jsonResult {
-                print(jsonResult["query"]!["results"]!!["item"]!![index]["title"])
+                var itemJson = jsonResult["query"]!["results"]!!["item"]!![index]
                 
-                articleArrayList.
+                var headline = itemJson["title"]
+                var directLink = itemJson["link"]
+                
+                if let creator = itemJson["creator"]{
+
+                }else{
+                        let creator = " ABC News "
+                }
+
+                print(creator)
+
+                if let imageURL = itemJson["group"]!["thumbnail"]!![url]{
+                    
+                    print(imageURL)
+                }else{
+
+                }
+                
+                
+                
+                articleArrayList()
+                print(itemJson["title"])
+                //init(headline: String, directLink: String, date: String, category: String, creator: String, imageLink: String)
+                
+                
                 
             }
             
